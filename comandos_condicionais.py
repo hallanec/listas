@@ -60,14 +60,15 @@
 # Se o vencedor for o Howard você deve imprimir:
 # Um pequeno passo para a ciência, um grande salto para alguém com mestrado.
 
-numero_artigos_lidos_por_sheldon = int(input("Qual é o número de artigos que foram lidos por Sheldon?"))
-numero_de_artigos_lidos_por_leonard = int(input("Qual é o número de artigos que foram lidos por Leonard?"))
-numero_de_artigos_lidos_por_raj = int(input("Qual é o número de artigos que foram lidos por Raj?"))
-numero_de_artigos_lidos_por_howard = int(input("Qual é o número de artigos que foram lidos por howard?"))
-numero_de_experimentos_realizados_por_sheldon = int(input("Qual é o número de experimentos que foram realizados por howard?"))
-numero_de_experimentos_realizados_por_leonard = int(input("Qual é o número de experimentos que foram realizados por howard?"))
-numero_de_experimentos_realizados_por_raj = int(input("Qual é o número de experimentos que foram realizados por howard?"))
-numero_de_experimentos_realizados_por_howard = int(input("Qual é o número de experimentos que foram realizados por howard?"))
+numero_artigos_lidos_por_sheldon = int(input())
+numero_de_artigos_lidos_por_leonard = int(input())
+numero_de_artigos_lidos_por_raj = int(input())
+numero_de_artigos_lidos_por_howard = int(input())
+numero_de_experimentos_realizados_por_sheldon = int(input())
+numero_de_experimentos_realizados_por_leonard = int(input())
+numero_de_experimentos_realizados_por_raj = int(input())
+numero_de_experimentos_realizados_por_howard = int(input())
+
 
 # pontuação = artigos * 2 + experimentos * 3
 
@@ -93,11 +94,40 @@ Howard:  {pont_howard}
 
 if pont_sheldon == pont_leonard == pont_raj == pont_howard:
     print("O cientista da semana é: Sheldon")
-
+    print("Não é atoa que ele ganhou o prêmio Nobel")
+elif pont_leonard > pont_raj and pont_leonard> pont_howard and pont_leonard > pont_sheldon:      
+    print("O cientista da semana é: Leonard")
+    print("A vitória dele prova que aguentar o Sheldon já é um experimento científico por si só.")
+elif pont_raj > pont_sheldon and pont_raj > pont_leonard and pont_raj > pont_howard:
+    print("O cientista da semana é: Raj")
+    print("Ele comemora... mas ainda precisa da ajuda do cachorro para falar com mulheres.")
+elif pont_howard > pont_leonard and pont_howard > pont_sheldon and pont_howard > pont_raj:
+    print("O cientista da semana é: Howard)")
+    print("Um pequeno passo para a ciência, um grande salto para alguém com mestrado.")
+elif pont_sheldon > pont_raj and pont_sheldon > pont_leonard and pont_sheldon > pont_howard:
+    print("O cientista da semana é: Sheldon")
+    print("Não é atoa que ele ganhou o prêmio Nobel")
+elif pont_sheldon < pont_raj and pont_sheldon < pont_leonard and pont_sheldon < pont_howard and pont_leonard == pont_raj == pont_howard:
+    print("O cientista da semana é: Leonard" )
+    print("A vitória dele prova que aguentar o Sheldon já é um experimento científico por si só.")
+elif pont_sheldon < pont_raj and pont_sheldon < pont_leonard and pont_sheldon < pont_howard and pont_leonard < pont_raj and  pont_leonard < pont_howard and pont_raj == pont_howard:
+    print("O cientista da semana é: Raj")
+    print("Ele comemora... mas ainda precisa da ajuda do cachorro para falar com mulheres.")
+elif pont_sheldon < pont_raj and pont_sheldon < pont_leonard and pont_sheldon < pont_howard and pont_leonard > pont_raj and  pont_leonard == pont_howard and pont_raj < pont_howard:
+    print("O cientista da semana é: Leonard")
+    print("A vitória dele prova que aguentar o Sheldon já é um experimento científico por si só.")
+elif pont_sheldon == pont_leonard and pont_sheldon > pont_raj and pont_sheldon > pont_howard:
+    print("O cientista da semana é: Sheldon")
+    print("Não é atoa que ele ganhou o prêmio Nobel")
+elif pont_sheldon == pont_raj and pont_sheldon > pont_leonard and pont_sheldon > pont_howard:
+    print("O cientista da semana é: Sheldon")
+    print("Não é atoa que ele ganhou o prêmio Nobel")
+elif pont_sheldon == pont_howard and pont_sheldon > pont_leonard and pont_sheldon > pont_raj:
+    print("O cientista da semana é: Sheldon")
+    print("Não é atoa que ele ganhou o prêmio Nobel")
     
 
 
 
-
-
-
+    
+    
