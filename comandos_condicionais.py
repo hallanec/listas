@@ -85,11 +85,10 @@ pont_howard = (numero_de_artigos_lidos_por_howard*2) + (numero_de_experimentos_r
 #print(f"O nome é {nome}")
 
 print(f"""Pontuação final:
-
 Sheldon: {pont_sheldon}
 Leonard: {pont_leonard}
-Raj:     {pont_raj}
-Howard:  {pont_howard}
+Raj: {pont_raj}
+Howard: {pont_howard}
 """)
 
 if pont_sheldon == pont_leonard == pont_raj == pont_howard:
@@ -102,7 +101,7 @@ elif pont_raj > pont_sheldon and pont_raj > pont_leonard and pont_raj > pont_how
     print("O cientista da semana é: Raj")
     print("Ele comemora... mas ainda precisa da ajuda do cachorro para falar com mulheres.")
 elif pont_howard > pont_leonard and pont_howard > pont_sheldon and pont_howard > pont_raj:
-    print("O cientista da semana é: Howard)")
+    print("O cientista da semana é: Howard")
     print("Um pequeno passo para a ciência, um grande salto para alguém com mestrado.")
 elif pont_sheldon > pont_raj and pont_sheldon > pont_leonard and pont_sheldon > pont_howard:
     print("O cientista da semana é: Sheldon")
