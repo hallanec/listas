@@ -76,5 +76,5 @@ elif distancia_final > 50 and amigo == "Robin":
     print("Sério, Ted? Um guarda-chuva? O destino é um conceito abstrato.")
 
 
-
+print("Faz o L")
             
