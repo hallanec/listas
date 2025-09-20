@@ -31,14 +31,14 @@ else:
         
     if tem_scully:
         print("Scully leva a melhor, não tem como competir com ele.")
-        perdedor_bocatona = input()
         vencedor_bocatona = "Scully"
-        print(f"{vencedor_bocatona} levou a melhor na Bocatona!")
+        perdedor_bocatona = input()
+        print(f"{perdedor_bocatona} não avançou para a próxima fase!")
     else:
         vencedor_bocatona = input()
         perdedor_bocatona = input()
         print(f"{vencedor_bocatona} levou a melhor na Bocatona!")
-        perdedor_bocatona = input()
+        print(f"{perdedor_bocatona} não avançou para a próxima fase!")
         
     if participante_1 == perdedor_bocatona:
         perdedor_atual = perdedor_bocatona
@@ -59,27 +59,40 @@ else:
         if tempo_participante_1 < tempo_participante_2 and tempo_participante_1 < tempo_participante_3:
             vencedor = participante_1
             if tempo_participante_2 < tempo_participante_3:
+                perdedor_volumosa = participante_3
+                print(f"{vencedor} levou a melhor na Corrida Volumosa!")
+                print(f"{perdedor_volumosa} não avançou para a próxima fase!")
                 vencedor_2 = participante_2
             else:
+                perdedor_volumosa = participante_2
+                print(f"{vencedor} levou a melhor na Corrida Volumosa!")
+                print(f"{perdedor_volumosa} não avançou para a próxima fase!")
                 vencedor_2 = participante_3
-            print(f"{vencedor} levou a melhor na Corrida Volumosa!")
-            print(f"{vencedor_2} levou a melhor na Corrida Volumosa!")
         elif tempo_participante_2 < tempo_participante_1 and tempo_participante_2 < tempo_participante_3:
             vencedor = participante_2
             if tempo_participante_1 < tempo_participante_3:
+                perdedor_volumosa = participante_3
+                print(f"{vencedor} levou a melhor na Corrida Volumosa!")
+                print(f"{perdedor_volumosa} não avançou para a próxima fase!")
                 vencedor_2 = participante_1
             else:
+                perdedor_volumosa = participante_1
+                print(f"{vencedor} levou a melhor na Corrida Volumosa!")
+                print(f"{perdedor_volumosa} não avançou para a próxima fase!")
                 vencedor_2 = participante_3
-            print(f"{vencedor} levou a melhor na Corrida Volumosa!")
-            print(f"{vencedor_2} levou a melhor na Corrida Volumosa!")
         else:
             vencedor = participante_3
             if tempo_participante_1 < tempo_participante_2:
+                perdedor_volumosa= participante_2
+                print(f"{vencedor} levou a melhor na Corrida Volumosa!")
+                print(f"{perdedor_volumosa} não avançou para a próxima fase!")
                 vencedor_2 = participante_1
             else:
+                perdedor_volumosa = participante_1
+                print(f"{vencedor} levou a melhor na Corrida Volumosa!")
+                print(f"{perdedor_volumosa} não avançou para a próxima fase!")
                 vencedor_2 = participante_2
-            print(f"{vencedor} levou a melhor na Corrida Volumosa!")
-            print(f"{vencedor_2} levou a melhor na Corrida Volumosa!")
+                
             
     elif participante_3 == perdedor_atual:
         tempo_participante_1 = int(input())
@@ -88,27 +101,39 @@ else:
         if tempo_participante_1 < tempo_participante_2 and tempo_participante_1 < tempo_participante_4:
             vencedor = participante_1
             if tempo_participante_2 < tempo_participante_4:
+                perdedor_volumosa = participante_4
+                print(f"{vencedor} levou a melhor na Corrida Volumosa!")
+                print(f"{perdedor_volumosa} não avançou para a próxima fase!")
                 vencedor_2 = participante_2
             else:
-                vencedor_2 = participante_4
-            print(f"{vencedor} levou a melhor na Corrida Volumosa!")
-            print(f"{vencedor_2} levou a melhor na Corrida Volumosa!")
+                perdedor_volumosa = participante_2
+                print(f"{vencedor} levou a melhor na Corrida Volumosa!")
+                print(f"{perdedor_volumosa} não avançou para a próxima fase!")      
+                vencedor_2 = participante_4    
         elif tempo_participante_2 < tempo_participante_1 and tempo_participante_2 < tempo_participante_4:
             vencedor = participante_2
             if tempo_participante_1 < tempo_participante_4:
+                perdedor_volumosa = participante_4
+                print(f"{vencedor} levou a melhor na Corrida Volumosa!")
+                print(f"{perdedor_volumosa} não avançou para a próxima fase!")
                 vencedor_2 = participante_1
             else:
+                perdedor_volumosa = participante_1
+                print(f"{vencedor} levou a melhor na Corrida Volumosa!")
+                print(f"{perdedor_volumosa} não avançou para a próxima fase!")
                 vencedor_2 = participante_4
-            print(f"{vencedor} levou a melhor na Corrida Volumosa!")
-            print(f"{vencedor_2} levou a melhor na Corrida Volumosa!")
         else:
             vencedor = participante_4
             if tempo_participante_1 < tempo_participante_2:
+                perdedor_volumosa = participante_2
+                print(f"{vencedor} levou a melhor na Corrida Volumosa!")
+                print(f"{perdedor_volumosa} não avançou para a próxima fase!")
                 vencedor_2 = participante_1
             else:
+                perdedor_volumosa = participante_1
+                print(f"{vencedor} levou a melhor na Corrida Volumosa!")
+                print(f"{perdedor_volumosa} não avançou para a próxima fase!")
                 vencedor_2 = participante_2
-            print(f"{vencedor} levou a melhor na Corrida Volumosa!")
-            print(f"{vencedor_2} levou a melhor na Corrida Volumosa!")
 
     elif participante_2 == perdedor_atual:
         tempo_participante_1 = int(input())
@@ -117,27 +142,42 @@ else:
         if tempo_participante_1 < tempo_participante_3 and tempo_participante_1 < tempo_participante_4:
             vencedor = participante_1
             if tempo_participante_3 < tempo_participante_4:
+                perdedor_volumosa = participante_4
+                print(f"{vencedor} levou a melhor na Corrida Volumosa!")
+                print(f"{perdedor_volumosa} não avançou para a próxima fase!")
                 vencedor_2 = participante_3
             else:
+                perdedor_volumosa = participante_3
+                print(f"{vencedor} levou a melhor na Corrida Volumosa!")
+                print(f"{perdedor_volumosa} não avançou para a próxima fase!")
                 vencedor_2 = participante_4
-            print(f"{vencedor} levou a melhor na Corrida Volumosa!")
-            print(f"{vencedor_2} levou a melhor na Corrida Volumosa!")
         elif tempo_participante_3 < tempo_participante_1 and tempo_participante_3 < tempo_participante_4:
             vencedor = participante_3
             if tempo_participante_1 < tempo_participante_4:
+                perdedor_volumosa = participante_4
+                print(f"{vencedor} levou a melhor na Corrida Volumosa!")
+                print(f"{perdedor_volumosa} não avançou para a próxima fase!")
                 vencedor_2 = participante_1
             else:
+                perdedor_volumosa = participante_1
+                print(f"{vencedor} levou a melhor na Corrida Volumosa!")
+                print(f"{perdedor_volumosa} não avançou para a próxima fase!")
                 vencedor_2 = participante_4
-            print(f"{vencedor} levou a melhor na Corrida Volumosa!")
-            print(f"{vencedor_2} levou a melhor na Corrida Volumosa!")
+            
         else:
             vencedor = participante_4
             if tempo_participante_1 < tempo_participante_3:
+                perdedor_volumosa = participante_3
+                print(f"{vencedor} levou a melhor na Corrida Volumosa!")
+                print(f"{perdedor_volumosa} não avançou para a próxima fase!")
                 vencedor_2 = participante_1
             else:
-                vencedor_2 = participante_3
-            print(f"{vencedor} levou a melhor na Corrida Volumosa!")
-            print(f"{vencedor_2} levou a melhor na Corrida Volumosa!")
+                perdedor_volumosa = participante_1
+                print(f"{vencedor} levou a melhor na Corrida Volumosa!")
+                print(f"{perdedor_volumosa} não avançou para a próxima fase!")
+                participante_3
+           
+
     
     elif participante_1 == perdedor_atual:
         tempo_participante_2 = int(input())
@@ -146,27 +186,41 @@ else:
         if tempo_participante_2 < tempo_participante_3 and tempo_participante_2 < tempo_participante_4:
             vencedor = participante_2
             if tempo_participante_3 < tempo_participante_4:
+                perdedor_volumosa = participante_4
+                print(f"{vencedor} levou a melhor na Corrida Volumosa!")
+                print(f"{perdedor_volumosa} não avançou para a próxima fase!")
                 vencedor_2 = participante_3
             else:
+                perdedor_volumosa = participante_3
+                print(f"{vencedor} levou a melhor na Corrida Volumosa!")
+                print(f"{perdedor_volumosa} não avançou para a próxima fase!")
                 vencedor_2 = participante_4
-            print(f"{vencedor} levou a melhor na Corrida Volumosa!")
-            print(f"{vencedor_2} levou a melhor na Corrida Volumosa!")
+            
         elif tempo_participante_3 < tempo_participante_2 and tempo_participante_3 < tempo_participante_4:
             vencedor = participante_3
             if tempo_participante_2 < tempo_participante_4:
+                perdedor_volumosa = participante_4
+                print(f"{vencedor} levou a melhor na Corrida Volumosa!")    
+                print(f"{perdedor_volumosa} não avançou para a próxima fase!")
                 vencedor_2 = participante_2
             else:
+                perdedor_volumosa = participante_2
+                print(f"{vencedor} levou a melhor na Corrida Volumosa!")
+                print(f"{perdedor_volumosa} não avançou para a próxima fase!")
                 vencedor_2 = participante_4
-            print(f"{vencedor} levou a melhor na Corrida Volumosa!")
-            print(f"{vencedor_2} levou a melhor na Corrida Volumosa!")
         else:
             vencedor = participante_4
             if tempo_participante_2 < tempo_participante_3:
+                perdedor_volumosa = participante_3
+                print(f"{vencedor} levou a melhor na Corrida Volumosa!")
+                print(f"{perdedor_volumosa} não avançou para a próxima fase!")
                 vencedor_2 = participante_2
             else:
+                perdedor_volumosa = participante_2
+                print(f"{vencedor} levou a melhor na Corrida Volumosa!")
+                print(f"{perdedor_volumosa} não avançou para a próxima fase!")
                 vencedor_2 = participante_3
-            print(f"{vencedor} levou a melhor na Corrida Volumosa!")
-            print(f"{vencedor_2} levou a melhor na Corrida Volumosa!")
+          
         
     if vencedor == "Amy" and vencedor_2 == "Jake":
         print("Jake ficou com o 2º lugar!")
@@ -177,10 +231,11 @@ else:
     else:
         vencedor_final = input()
         if vencedor_final == vencedor:
-            segundo_lugar = vencedor_2
+            print(f"{vencedor_2} ficou com o 2º lugar!")
+            print(f"{vencedor} VENCEU O JIMMY JABS!")
         else:
-            segundo_lugar = vencedor
-    
-    print(f"{segundo_lugar} ficou com o 2º lugar!")
-    print(f"{vencedor_final} VENCEU O JIMMY JABS!")
+            print(f"{vencedor} ficou com o 2º lugar!")
+            print(f"{vencedor_2} VENCEU O JIMMY JABS!")
+
+
 
