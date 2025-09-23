@@ -1,18 +1,7 @@
-item_comprado = input().strip().lower()
+item_comprado = input().lower()
 valor_do_item = float(input())
 responsavel_pela_compra = input().capitalize()
-tipo_evento = input().strip().lower()
-
-# Entrada de dados normalizada:
-# .strip() → remove espaços em branco antes/depois da string
-# .lower() → converte tudo para letras minúsculas
-# Isso garante que a comparação funcione mesmo que o usuário digite "BOLO", "bolo", "Bolo", etc.
-#strip() para remover espaços no começo e no fim da palavra
-#.lower() para transformar tudo em letras minúsculas.
-# Obs.: Não é garantido que a entrada esteja sempre igual em relação a letras maiúsculas e minúsculas, seu programa deve lidar com isso.
-# O que é o capitalize()?
-#É um método de string que transforma a primeira letra da string em maiúscula e todas as outras letras em minúscula.
-
+tipo_evento = input().lower()
 
 if valor_do_item > 100 and responsavel_pela_compra != "Angela":
     print("Compra Reprovada!")
