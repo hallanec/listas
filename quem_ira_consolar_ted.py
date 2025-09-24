@@ -6,7 +6,6 @@ print("Quantos dos amigos dele conseguirão ajudar dessa vez?")
 print ("Hora da lista dos amigos da vez!")
 
 if quantidade_pessoas == 0:
-    quantidade_media_cervejas = 0
     lugar = "MacLaren’s Pub"
     quantidade_media_cervejas = int(input())
     print("Um lugar habitual, mas com uma galera diferente. Será estranho, mas Ted vai.")
@@ -24,7 +23,6 @@ elif quantidade_pessoas == 1:
     else:
         print(f"{nome_1} vai encarar essa com Ted. Às vezes a gente encontra apoio de quem menos espera.")
     
-        quantidade_media_cervejas = 0
     lugar = input()
     if lugar == "MacLaren’s Pub":
         quantidade_media_cervejas = int(input())
@@ -78,7 +76,6 @@ elif quantidade_pessoas == 2:
     elif (nome_1 == "Barney" or nome_1 == "Marshall") and (nome_2 == "Barney" or nome_2 == "Marshall" ):
         print("Sem dúvida os melhores amigos de Ted. Mas tomara que Barney não queira implicar com Marshall sobre quem realmente é o melhor amigo dele.")
     
-        quantidade_media_cervejas = 0
     lugar = input()
     if lugar == "MacLaren’s Pub":
         quantidade_media_cervejas = int(input())
@@ -177,10 +174,6 @@ elif quantidade_pessoas == 3:
     elif (nome_3 == "Marshall" or nome_3 == "Barney") and (nome_2 == "Barney" or nome_2 == "Marshall"):
         print("Sem dúvida os melhores amigos de Ted. Mas tomara que Barney não queira implicar com Marshall sobre quem realmente é o melhor amigo dele.")   
     
-       
-    #Após isso, será solicitado o lugar que eles vão sair: 
-    #Se o lugar escolhido for o MacLaren’s Pub, haverá mais um input, que será a quantidade média de cervejas bebidas pelos que estão presentes:
-        quantidade_media_cervejas = 0
     lugar = input()
     if lugar == "MacLaren’s Pub":
         quantidade_media_cervejas = int(input())
@@ -299,7 +292,6 @@ elif quantidade_pessoas == 4:
     elif (nome_1 == "Marshall" or nome_1 == "Robin" or nome_1 == "Lily" or nome_1 == "Barney") and (nome_2 == "Marshall" or nome_2 == "Robin" or nome_2 == "Lily" or nome_2 == "Barney") and (nome_3 == "Marshall" or nome_3 == "Robin" or nome_3 == "Lily" or nome_3 == "Barney") and (nome_4 == "Marshall" or nome_4 == "Robin" or nome_4 == "Lily" or nome_4 == "Barney"):
         print("O quinteto estará reunido nessa jornada! É o momento perfeito pra brincar de “Você conhece o Ted?")
     
-        quantidade_media_cervejas = 0
     lugar = input()
     if lugar == "MacLaren’s Pub":
         quantidade_media_cervejas = int(input())
