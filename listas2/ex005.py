@@ -128,14 +128,35 @@ while perdedor_1 != False and perdedor_2 != False:
                 saiu_antes_acabar = "clara"
                 
     if jogador_atual > segundo_jogador and segundo_jogador < terceiro_jogador:
-        vencedor = jogador_atual
+        vencedor = jogador_atual 
+        if jogador_atual == bolinhas_andre:
+            vencedor = "andre"
+        elif jogador_atual == bolinhas_bruno:
+            vencedor = "bruno"
+        else:
+            vencedor = "clara"
     elif jogador_atual < segundo_jogador and segundo_jogador > terceiro_jogador:
         vencedor = segundo_jogador
+        if segundo_jogador == bolinhas_andre:
+            vencedor = "andre"
+        elif segundo_jogador == bolinhas_bruno:
+            vencedor = "bruno"
+        else:
+            vencedor = "clara" 
     else:
-        vencedor = terceiro_jogador
+            if terceiro_jogador == bolinhas_andre:
+                vencedor = "andre"
+            elif terceiro_jogador == bolinhas_bruno:
+                vencedor = "bruno"
+            else:
+                vencedor = "clara" 
+                
+    
+      
 
-
-
+print(acertos_andre)
+print(acertos_bruno)
+print (vencedor)
              
                 
 
