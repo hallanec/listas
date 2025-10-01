@@ -5,7 +5,6 @@ bolinhas_clara = int(input())
 #fila = 1, 2 , 3 
 #fila = andre, bruno, clara
 
-resultado_rodada = input()
 
 jogador_atual = 0
 segundo_jogador = 0
@@ -25,7 +24,9 @@ perdedor_1 = 1
 perdedor_2 = 1
 
 while perdedor_1 != 0 and perdedor_2 != 0:
-      
+     
+    resultado_rodada = input()
+
     if jogador_atual == bolinhas_andre:
         segundo_jogador = bolinhas_bruno
         terceiro_jogador = bolinhas_clara
